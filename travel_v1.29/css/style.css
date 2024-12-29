@@ -1,0 +1,243 @@
+/* Global Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 76px;
+}
+
+/* Navigation */
+.navbar-brand i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Hero Carousel */
+#heroCarousel {
+    margin-top: -76px;
+}
+
+.carousel-item {
+    height: 100vh;
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    padding: 0 20px;
+}
+
+.carousel-indicators {
+    margin-bottom: 3rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Destinations Header */
+.destinations-header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('../images/destination-picture.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    margin-top: -76px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Destination Cards */
+.destination-card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.destination-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-card .badge {
+    font-size: 0.8rem;
+    padding: 0.5em 1em;
+}
+
+.destination-card .bi {
+    margin-right: 0.5rem;
+}
+
+.price {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Special Offers Header */
+.offers-header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('../images/header-special-offer.avif') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    margin-top: -76px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Special Offers */
+.offer-card {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('../images/offer-picture.jpg') no-repeat center;
+    background-size: cover;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
+.col-md-6:nth-of-type(2) .offer-card {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                      url('../images/offer2-picture.jpg');
+}
+
+
+.offer-content {
+    background: rgba(0,0,0,0.6);
+    padding: 2rem;
+    border-radius: 8px;
+}
+/* Blog Styles */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.badge {
+    font-size: 0.8rem;
+    padding: 0.5em 1em;
+}
+
+/* Popular Posts */
+.list-group-item-action:hover {
+    background-color: var(--light-color);
+}
+
+/* Tags */
+.btn-outline-primary {
+    border-width: 1px;
+}
+
+.btn-outline-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(45deg, #1a1a1a, #2c2c2c);
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Newsletter Card */
+.bg-primary {
+    background: linear-gradient(135deg, #0d6efd, #0a58ca) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    
+    .carousel-caption .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .offer-card {
+        height: 200px;
+    }
+
+    .destinations-header {
+        padding: 60px 0;
+    }
+}
+
+/* Animations */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
