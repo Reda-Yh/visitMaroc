@@ -1,0 +1,1 @@
+Tache à réaliser : Organiser le style et le javascript
