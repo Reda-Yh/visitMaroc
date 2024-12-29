@@ -287,6 +287,118 @@ body {
     padding: 0 30px;
 }
 
+/* ---------------  contact.html  --------------- */
+/* header */
+.contact-hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1531366936337-7c912a4589a7');
+                /* https://images.unsplash.com/photo-1520984032042-162d526883e0 */
+    background-size: cover;
+    background-position: center;
+    margin-top: -76px;
+    height: 60vh;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-hero-section h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contact-hero-section p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+        radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+        radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+        radial-gradient(4px 4px at 400px 350px, #fff, transparent);
+    background-size: 600px 600px;
+    animation: snow 3s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    }
+    100% {
+        background-position: 600px 600px, 600px 600px, 600px 600px, 600px 600px;
+    }
+}
+
+/* form */
+.contact-form-container, .contact-info {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 100%; /* Les deux div auront la même hauteur */
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.info-item i {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+.form-control, .form-select {
+    border: 2px solid #e9ecef;
+    padding: 12px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    font-weight: 600;
+}
+
+.social-links a {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
 /* ---------------  Footer  --------------- */
 footer {
     background: linear-gradient(45deg, #1a1a1a, #2c2c2c);
