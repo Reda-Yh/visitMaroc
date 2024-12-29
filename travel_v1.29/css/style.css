@@ -1,21 +1,27 @@
-/* Global Styles */
+/* ---------------  Variables  --------------- */
 :root {
     --primary-color: #0d6efd;
     --secondary-color: #6c757d;
     --light-color: #f8f9fa;
     --dark-color: #212529;
+    --culture-color: #E91E63;
+    --nature-color: #4CAF50;
+    --beach-color: #FF9800;
 }
 
+/* ---------------  Global Styles  --------------- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 76px;
 }
 
-/* Navigation */
+/* ---------------  Navigation  --------------- */
 .navbar-brand i {
     font-size: 1.5rem;
     margin-right: 0.5rem;
 }
+
+/* ---------------  index.html  --------------- */
 
 /* Hero Carousel */
 #heroCarousel {
@@ -56,6 +62,8 @@ body {
 .carousel-control-next {
     width: 5%;
 }
+
+/* ---------------  destinations.html  --------------- */
 
 /* Destinations Header */
 .destinations-header {
@@ -98,43 +106,8 @@ body {
     font-size: 1.1em;
 }
 
-/* Special Offers Header */
-.offers-header {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url('../images/header-special-offer.avif') no-repeat center center;
-    background-size: cover;
-    padding: 100px 0;
-    margin-top: -76px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
+/* ---------------  blog.html  --------------- */
 
-/* Special Offers */
-.offer-card {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url('../images/offer-picture.jpg') no-repeat center;
-    background-size: cover;
-    height: 250px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
-    color: white;
-}
-
-.col-md-6:nth-of-type(2) .offer-card {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                      url('../images/offer2-picture.jpg');
-}
-
-
-.offer-content {
-    background: rgba(0,0,0,0.6);
-    padding: 2rem;
-    border-radius: 8px;
-}
-/* Blog Styles */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -172,7 +145,149 @@ body {
     transform: translateY(-2px);
 }
 
-/* Footer */
+/* Newsletter Card */
+.bg-primary {
+    background: linear-gradient(135deg, #0d6efd, #0a58ca) !important;
+}
+
+/* ---------------  news.html  --------------- */
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://picsum.photos/1920/1080') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    margin-top: -76px;
+    padding: 100px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.search-bar {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search-bar input {
+    padding-right: 50px;
+    border-radius: 30px;
+    height: 50px;
+    border: none;
+}
+
+.search-bar button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+/* new-featured Destinations */
+.new-featured-destinations {
+    padding: 80px 0;
+}
+
+.new-featured-main, .new-featured-secondary {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.new-featured-main img, .new-featured-secondary img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.new-featured-main:hover img, .new-featured-secondary:hover img {
+    transform: scale(1.05);
+}
+
+.new-featured-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+}
+
+/* Section */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Categories Section */
+.category-card {
+    background: var(--light-color);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.culture .category-icon {
+    color: var(--culture-color);
+}
+
+.nature .category-icon {
+    color: var(--nature-color);
+}
+
+.beach .category-icon {
+    color: var(--beach-color);
+}
+
+/* Newsletter Section */
+.newsletter {
+    background: linear-gradient(rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9)),
+                url('https://images.unsplash.com/photo-1488646953014-85cb44e25828') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 80px 0;
+}
+
+.newsletter-form .form-control {
+    border-radius: 30px 0 0 30px;
+    height: 50px;
+    border: none;
+}
+
+.newsletter-form .btn {
+    border-radius: 0 30px 30px 0;
+    height: 50px;
+    padding: 0 30px;
+}
+
+/* ---------------  Footer  --------------- */
 footer {
     background: linear-gradient(45deg, #1a1a1a, #2c2c2c);
 }
@@ -186,12 +301,34 @@ footer {
     color: var(--primary-color) !important;
 }
 
-/* Newsletter Card */
-.bg-primary {
-    background: linear-gradient(135deg, #0d6efd, #0a58ca) !important;
+/* ---------------  Animations  --------------- */
+.btn {
+    transition: all 0.3s ease;
 }
 
-/* Responsive Adjustments */
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ---------------  Custom Scrollbar  --------------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
+
+/* ---------------  Responsive Adjustments  --------------- */
 @media (max-width: 768px) {
     .carousel-caption h1 {
         font-size: 2rem;
@@ -213,31 +350,4 @@ footer {
     .destinations-header {
         padding: 60px 0;
     }
-}
-
-/* Animations */
-.btn {
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #0056b3;
 }

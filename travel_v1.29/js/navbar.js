@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <a class="nav-link fw-semibold" href="./destinations.html">Destinations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="./offers.html">Special Offers</a>
+                        <a class="nav-link fw-semibold" href="./news.html">News</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="./blog.html">Blog</a>
