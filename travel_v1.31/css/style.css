@@ -479,24 +479,24 @@ button, a {
     color: #5c6bc0;
 }
 
-h5 {
+.contact-info-h5 {
     font-size: 18px;
     font-weight: bold;
     color: #333;
 }
 
-p {
+.contact-info-p {
     font-size: 16px;
     color: #666;
 }
 
-.social-links {
+.contact-social-links {
     margin-top: 30px;
     gap: 15px;
     justify-content: center;
 }
 
-.social-icon {
+.contact-social-links .social-icon {
     width: 50px;
     height: 50px;
     display: flex;
@@ -509,7 +509,7 @@ p {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.social-icon:hover {
+.contact-social-links .social-icon:hover {
     background-color: #5c6bc0;
     color: white;
 }
