@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,10 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script src="./js/navbar.js" defer></script>
 </head>
+
 <body>
+    <!-- Navbar -->
+
     <!-- Page Header -->
     <header class="destinations-header py-5 mb-5">
         <div class="container">
@@ -27,7 +31,7 @@
     <section class="container mb-5">
         <div class="row g-3">
             <div class="col-md-4">
-                <select class="form-select" id="continentFilter">
+                <select class="form-select" id="continentFilter" aria-label="Filter by Continent">
                     <option value="">All Continents</option>
                     <option value="europe">Europe</option>
                     <option value="asia">Asia</option>
@@ -37,7 +41,7 @@
                 </select>
             </div>
             <div class="col-md-4">
-                <select class="form-select" id="priceFilter">
+                <select class="form-select" id="priceFilter" aria-label="Filter by Price">
                     <option value="">All Prices</option>
                     <option value="budget">Budget</option>
                     <option value="moderate">Moderate</option>
@@ -45,7 +49,7 @@
                 </select>
             </div>
             <div class="col-md-4">
-                <button class="btn btn-primary w-100" id="applyFilters">Apply Filters</button>
+                <button class="btn btn-primary w-100" id="applyFilters" disabled>Apply Filters</button>
             </div>
         </div>
     </section>
@@ -55,14 +59,16 @@
         <div class="row g-4" id="destinationsContainer">
             <!-- Destinations will be dynamically inserted here -->
         </div>
-    </section>
-
+    </section> 
     <!-- Footer -->
     <script src="./js/footer.js"></script>
+
 
     <script type="module" src="./js/destination.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
 </body>
+
 </html>

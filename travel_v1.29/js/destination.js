@@ -1,10 +1,15 @@
 import { destinationsData } from "./data.js";
 
-const destinationsContainer = document.querySelector('.row.g-4');
+const destinationsContainer = document.querySelector('#destinationsContainer');
+
+// Helper function to capitalize the first letter
+function capitalize(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
 
 // Function to generate destination cards
 function generateDestinations(data) {
-    destinationsContainer.innerHTML = ""; // Clear the container
+    const fragment = document.createDocumentFragment();
 
     data.forEach(destination => {
         const div = document.createElement('div');
@@ -12,7 +17,7 @@ function generateDestinations(data) {
 
         div.innerHTML = `
             <div class="card destination-card h-100">
-                <img src="${destination.image}" class="card-img-top" alt="${destination.name}">
+                <img src="${destination.image}" class="card-img-top lazyload" alt="${destination.name}" loading="lazy">
                 <div class="card-body">
                     <span class="badge bg-primary mb-2">${capitalize(destination.continent)}</span>
                     <h5 class="card-title">${destination.name}</h5>
@@ -29,36 +34,41 @@ function generateDestinations(data) {
             </div>
         `;
 
-        destinationsContainer.appendChild(div);
+        fragment.appendChild(div);
     });
-}
 
-
-// Helper function to capitalize the first letter
-function capitalize(word) {
-    return word.charAt(0).toUpperCase() + word.slice(1);
+    destinationsContainer.innerHTML = ""; // Clear the container once
+    destinationsContainer.appendChild(fragment); // Append the fragment
 }
 
 // Apply filters
 function applyFilters() {
-    const continentFilter = document.getElementById('continentFilter').value;
-    const priceFilter = document.getElementById('priceFilter').value;
+    const continentFilter = document.getElementById('continentFilter').value.toLowerCase();
+    const priceFilter = document.getElementById('priceFilter').value.toLowerCase();
 
     let filteredDestinations = destinationsData;
 
     if (continentFilter) {
-        filteredDestinations = filteredDestinations.filter(destination => destination.continent === continentFilter);
+        filteredDestinations = filteredDestinations.filter(destination =>
+            destination.continent.toLowerCase() === continentFilter
+        );
     }
 
     if (priceFilter) {
-        filteredDestinations = filteredDestinations.filter(destination => destination.price === priceFilter);
+        filteredDestinations = filteredDestinations.filter(destination =>
+            destination.price.toLowerCase() === priceFilter
+        );
     }
 
     generateDestinations(filteredDestinations);
 }
 
-// Event listener for the filter button
-document.getElementById('applyFilters').addEventListener('click', applyFilters);
-
 // Initial load
-generateDestinations(destinationsData);
+document.addEventListener('DOMContentLoaded', () => {
+    generateDestinations(destinationsData); // Directly render destinations on load
+});
+
+// Event listeners
+document.getElementById('continentFilter').addEventListener('change', applyFilters);
+document.getElementById('priceFilter').addEventListener('change', applyFilters);
+document.getElementById('applyFilters').addEventListener('click', applyFilters);

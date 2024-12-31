@@ -11,7 +11,8 @@
     <script src="./js/navbar.js" defer></script>
 </head>
 
-<body>
+<body id="bg-contact">
+    
     <!-- Navigation -->
 
     <!-- Page Header -->
@@ -26,8 +27,9 @@
     <!-- Contact Section -->
     <section class="container my-5">
         <div class="row g-4">
-            <div class="col-md-6">
-                <div class="contact-form-container p-4">
+            <!-- Form Section -->
+            <div class="col-md-6 d-flex">
+                <div class="contact-form-container p-4 flex-fill">
                     <h2 class="mb-4 text-primary text-center">
                         <i class="bi bi-envelope-paper-heart me-2"></i> Send Us a Message
                     </h2>
@@ -54,41 +56,42 @@
                     </form>
                 </div>
             </div>
-
-            <div class="col-md-6">
-                <div class="contact-info p-4 text-center">
-                    <h2 class="mb-4 text-primary">
-                        <i class="bi bi-geo-alt-fill me-2"></i> Find Us
+    
+            <!-- Contact Info Section -->
+            <div class="col-md-6 d-flex">
+                <div class="contact-info p-4 flex-fill d-flex flex-column justify-content-center">
+                    <h2 class="text-primary text-center mb-4">
+                        <i class="bi bi-geo-alt-fill me-2"></i> Trouvez-nous
                     </h2>
-                    <div class="info-item d-flex align-items-center justify-content-center mb-4">
+                    <div class="info-item mb-4 text-center">
                         <i class="bi bi-building text-primary me-3 fs-4"></i>
                         <div>
-                            <h5>Office Address</h5>
+                            <h5>Adresse du Bureau</h5>
                             <p>123 Winter Street, North Pole Avenue<br>Christmas City, XM12 345</p>
                         </div>
                     </div>
-                    <div class="info-item d-flex align-items-center justify-content-center mb-4">
+                    <div class="info-item mb-4 text-center">
                         <i class="bi bi-telephone text-primary me-3 fs-4"></i>
                         <div>
-                            <h5>Phone</h5>
+                            <h5>Téléphone</h5>
                             <p>+1 (555) 123-4567</p>
                         </div>
                     </div>
-                    <div class="info-item d-flex align-items-center justify-content-center mb-4">
+                    <div class="info-item mb-4 text-center">
                         <i class="bi bi-envelope text-primary me-3 fs-4"></i>
                         <div>
                             <h5>Email</h5>
                             <p>info@holidaymagic.com</p>
                         </div>
                     </div>
-                    <div class="social-links mt-4 text-center">
-                        <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="btn btn-outline-primary"><i class="bi bi-pinterest"></i></a>
+                    <div class="social-links d-flex justify-content-center gap-3">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-pinterest"></i></a>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
     </section>
 

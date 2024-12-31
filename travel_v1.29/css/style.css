@@ -4,6 +4,7 @@
     --secondary-color: #6c757d;
     --light-color: #f8f9fa;
     --dark-color: #212529;
+    --semi-dark-color: #343a40;
     --culture-color: #E91E63;
     --nature-color: #4CAF50;
     --beach-color: #FF9800;
@@ -19,6 +20,19 @@ body {
 .navbar-brand i {
     font-size: 1.5rem;
     margin-right: 0.5rem;
+}
+
+.navbar.bg-dark {
+    background-color: var(--semi-dark-color) !important;
+}
+
+/* ---------------  Curseur  --------------- */
+* {
+    cursor: url(https://cdn.custom-cursor.com/db/21280/32/color-indigo-dye-cursor.png), default !important;
+}
+
+button, a {
+    cursor: url(https://cdn.custom-cursor.com/db/21279/32/color-indigo-dye-pointer.png), pointer !important;
 }
 
 /* ---------------  index.html  --------------- */
@@ -349,32 +363,65 @@ body {
     }
 }
 
-/* form */
-.contact-form-container, .contact-info {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    height: 100%; /* Les deux div auront la même hauteur */
+/* Background Contact */
+#bg-contact{
+    background: linear-gradient(135deg, #8ab6d6, #4a90e2);
+    background-size: 100% 100%;
+    animation: gradientAnimation 3s ease infinite;
+    padding: 0px 0;
+    border-radius: 10px;
 }
 
-.info-item {
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container for both sections */
+.row.g-4 {
     display: flex;
-    align-items: flex-start;
-    gap: 15px;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
-.info-item i {
-    font-size: 24px;
-    color: var(--primary-color);
+/* Form Section */
+.contact-form-container {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: all 0.3s ease-in-out;
 }
 
-.navbar-brand i {
-    margin-right: 8px;
+.contact-form-container:hover {
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
 }
 
+/* Equal height layout */
+.contact-form-container, .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.flex-fill {
+    flex: 1;
+}
+
+/* Form Styling */
 .form-control, .form-select {
     border: 2px solid #e9ecef;
     padding: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
 }
 
 .form-control:focus, .form-select:focus {
@@ -385,22 +432,82 @@ body {
 .btn-primary {
     padding: 12px 25px;
     font-weight: 600;
+    background-color: var(--primary-color);
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
-.social-links a {
-    width: 45px;
-    height: 45px;
-    display: inline-flex;
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+/* Contact Info */
+.contact-info {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info:hover {
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* Centering text and icons in the second section */
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-item i {
+    font-size: 28px;
+    color: #5c6bc0;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+.social-links {
+    margin-top: 30px;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: all 0.3s ease;
+    background-color: #f0f2f5;
+    color: #5c6bc0;
+    font-size: 24px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.social-links a:hover {
-    background-color: var(--primary-color);
+.social-icon:hover {
+    background-color: #5c6bc0;
     color: white;
 }
+
+
+
 
 /* ---------------  Footer  --------------- */
 footer {
