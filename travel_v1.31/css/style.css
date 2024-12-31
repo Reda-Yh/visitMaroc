@@ -446,7 +446,7 @@ button, a {
 }
 
 .btn-primary:hover {
-    background-color: darken(var(--primary-color), 10%);
+    background-color: darken(var(primary-color), 50%);
 }
 
 /* Contact Info */
