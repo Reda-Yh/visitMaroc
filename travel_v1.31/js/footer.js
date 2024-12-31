@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             </div>
             <div class="text-center pt-3 border-top">
-                <p class="mb-0">&copy; 2023 Wanderlust Travel. All rights reserved.</p>
+                <p class="mb-0">&copy; 2025 Wanderlust Travel. All rights reserved.</p>
             </div>
         </div>
     </footer>

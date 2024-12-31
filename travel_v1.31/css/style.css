@@ -590,6 +590,33 @@ footer {
     }
 }
 
+@media (min-width: 769px) and (max-width: 1013px) {
+
+     .special-offers .card-hover img {
+        height: 50%;
+        object-fit: cover;
+    }
+
+    .special-offers .card-hover__content {
+        padding: 10%;
+        font-size: 0.9rem;
+    }
+
+    .special-offers .card-hover__title {
+        font-size: 1.25rem;
+    }
+
+    .special-offers .card-hover__extra {
+        padding: 60px;
+        font-size: 1.2rem;
+    }
+
+    .special-offer-banner {
+        font-size: 14px;
+        padding: 8px 15px;
+    } 
+}
+
 /* ---------------  index.html  --------------- */
 
 /* ---------------  Special Offers  --------------- */
