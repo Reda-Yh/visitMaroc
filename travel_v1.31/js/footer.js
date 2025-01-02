@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             </div>
             <div class="text-center pt-3 border-top">
+                <p class="mb-0">Managed by <img src="https://i.ibb.co/PgLQdtz/RMSS.png" alt="Sponsor Logo" class="img-fluid" style="max-height: 50px;"></br></br></p>
                 <p class="mb-0">&copy; 2025 Wanderlust Travel. All rights reserved.</p>
             </div>
         </div>
