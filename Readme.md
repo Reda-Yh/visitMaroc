@@ -46,7 +46,7 @@ This project was developed by:
 - **Ilyass Hmala**
 - **Noamane Ould El Abar**
 
-## Future Enhancements
+## Future Enhancements.
 - Integrating a backend to handle user data and inquiries.
 - Adding a database for managing blog posts and destinations dynamically.
 - Implementing user authentication for personalized experiences.
