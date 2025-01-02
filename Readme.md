@@ -18,7 +18,7 @@
 - **Bootstrap Icons**: For adding icons throughout the site.
 
 ## Pages
-1. **Home Page**
+1. ** Home Page**
    - Displays an attractive hero section.
    - Highlights popular destinations.
    - Includes a call-to-action to explore more.
