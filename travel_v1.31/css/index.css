@@ -1,0 +1,220 @@
+/* ---------------  index.html  --------------- */
+
+/* Hero Carousel */
+#heroCarousel {
+    margin-top: -76px;
+}
+
+.carousel-item {
+    height: 100vh;
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
+}
+
+.carousel-indicators {
+    margin-bottom: 3rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* ---------------  Special Offers  --------------- */
+.card-hover {
+    width: auto;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 32px -10px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.card-hover:hover {
+    .card-hover__extra {
+        transform: translateY(0);
+        transition: transform 0.35s;
+    }
+
+    .card-hover__content {
+        background-color: #B8D6F1;
+        bottom: 100%;
+        transform: translateY(100%);
+        height: 272px;
+        padding-top: 70px;
+        transition: all 0.35s cubic-bezier(.3, .77, .5, .99);
+    }
+
+    .card-hover__link {
+        opacity: 1;
+        transform: translate(-50%, 0);
+        transition: all 0.3s 0.35s cubic-bezier(.1, .72, .4, .97);
+    }
+
+    img {
+        transform: scale(1);
+        transition: 0.35s 0.1s transform cubic-bezier(.1, .72, .4, .97);
+    }
+}
+
+.card-hover__content {
+    width: 100%;
+    text-align: center;
+    background-color: #4682B4;
+    padding: 0 15% 14%;
+    position: absolute;
+    height:220px;
+    bottom: 0;
+    left: 0;
+    transform: translateY(0);
+    transition: all 0.35s 0.35s cubic-bezier(.1, .77, .4, .97);
+    will-change: bottom, background-color, transform, padding;
+    z-index: 2;
+}
+
+.card-hover__content::before,
+.card-hover__content::after {
+    content: '';
+    width: 100%;
+    height: 120px;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.card-hover__content::before {
+    top: -80px;
+    clip-path: ellipse(60% 80px at bottom center);
+}
+
+.card-hover__content::after {
+    bottom: -80px;
+    clip-path: ellipse(60% 80px at top center);
+}
+
+.card-hover__title {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.card-hover__title span {
+    color: #1E3A8A;
+}
+
+.card-hover__text {
+    font-size: 0.75rem;
+}
+
+.card-hover__link {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+    color: #1E3A8A;
+    opacity: 0;
+    padding: px;
+    transition: all 0.35s;
+}
+
+.card-hover__link:hover svg {
+    transform: translateX(4px);
+}
+
+.card-hover__link svg {
+    width: 18px;
+    margin-left: 4px;
+    transition: transform 0.3s;
+}
+
+.card-hover__extra {
+    height: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #4682B4;
+    padding: 80px;
+    bottom: 0;
+    z-index: 0;
+    color: #B8D6F1;
+    transform: translateY(100%);
+    transition: transform 0.35s;
+}
+
+.card-hover__extra span {
+    color: #1E3A8A;
+}
+
+.card-hover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px 5px 0px 0px;
+    width: 100%;
+    height: 55.2%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1);
+    transition: 0.35s 0.35s transform cubic-bezier(.1, .72, .4, .97);
+}
+/*  */
+.special-offer-banner {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #2a3d66;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    border: 1px solid #1c2b3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.offer-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.special-offer-banner span {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}

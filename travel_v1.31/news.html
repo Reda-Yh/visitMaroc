@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/news.css">
     <script src="./js/navbar.js" defer></script>
 </head>
+
 <body>
     <!-- Navigation -->
 
@@ -19,8 +22,9 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center text-white">
                     <div class="hero-content">
-                        <h1 class="display-4 fw-bold mb-4">Explorez les Merveilles du Monde</h1>
-                        <p class="lead mb-4">Découvrez des destinations uniques et créez des souvenirs inoubliables</p>
+                        <h1 class="display-4 fw-bold mb-4">Actualités et Événements au Maroc</h1>
+                        <p class="lead mb-4">Découvrez les dernières actualités touristiques et les événements à ne
+                            pasmanque</p>
                         <div class="search-bar">
                             <input type="text" class="form-control" placeholder="Où souhaitez-vous aller ?">
                             <button class="btn btn-primary"><i class="bi bi-search"></i></button>
@@ -31,34 +35,34 @@
         </div>
     </header>
 
-    <!-- new-featured Destinations -->
-    <section class="new-new-featured-destinations py-5">
+    <!-- Featured Events -->
+    <section class="featured-events py-5">
         <div class="container">
-            <h2 class="section-title">Destinations Populaires</h2>
+            <h2 class="section-title">Événements de Football à Venir</h2>
             <div class="row g-4">
-                <div class="col-md-8">
-                    <div class="new-featured-main">
-                        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a" alt="Paris" class="img-fluid rounded">
-                        <div class="new-featured-content">
-                            <span class="badge bg-primary">Europe</span>
-                            <h3>Paris, France</h3>
-                            <p>Découvrez la ville de l'amour, ses monuments emblématiques et sa gastronomie...</p>
+                <!-- Event 1 -->
+                <div class="col-md-6">
+                    <div class="event-card major">
+                        <img src="https://i.ibb.co/L63yzHz/gettyimages-2188780493-612x612.jpg"
+                            alt="Coupe du Monde 2030">
+                        <div class="event-content">
+                            <span class="badge bg-danger">Mondial</span>
+                            <h3>Coupe du Monde 2030</h3>
+                            <p class="date"><i class="bi bi-calendar3"></i> Juin - Juillet 2030</p>
+                            <p>Le Maroc sera l'un des pays hôtes de la Coupe du Monde de la FIFA 2030.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="new-featured-secondary mb-4">
-                        <img src="https://images.unsplash.com/photo-1533050487297-09b450131914" alt="Bali" class="img-fluid rounded">
-                        <div class="new-featured-content">
-                            <span class="badge bg-success">Asie</span>
-                            <h4>Bali, Indonésie</h4>
-                        </div>
-                    </div>
-                    <div class="new-featured-secondary">
-                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2" alt="New York" class="img-fluid rounded">
-                        <div class="new-featured-content">
-                            <span class="badge bg-warning">Amérique</span>
-                            <h4>New York, USA</h4>
+                <!-- Event 2 -->
+                <div class="col-md-6">
+                    <div class="event-card major">
+                        <img src="https://i.ibb.co/DVQgb3D/CAN-2025-1.webp" alt="Coupe d'Afrique 2025">
+                        <!-- https://i.ibb.co/31pRXN5/one-year-to-go-3.webp -->
+                        <div class="event-content">
+                            <span class="badge bg-success">Afrique</span>
+                            <h3>Coupe d'Afrique des Nations 2025</h3>
+                            <p class="date"><i class="bi bi-calendar3"></i> Janvier - Février 2025</p>
+                            <p>La CAN 2025 se tiendra au Maroc, rassemblant les meilleures équipes africaines.</p>
                         </div>
                     </div>
                 </div>
@@ -126,9 +130,10 @@
     <!-- Footer -->
     <script src="./js/footer.js"></script>
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>

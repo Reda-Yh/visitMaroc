@@ -1,0 +1,51 @@
+/* ---------------  blog.html  --------------- */
+.blog-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://i.ibb.co/Q90hn4x/header-blog.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    margin-top: -76px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.badge {
+    font-size: 0.8rem;
+    padding: 0.5em 1em;
+}
+
+/* Popular Posts */
+.list-group-item-action:hover {
+    background-color: var(--light-color);
+}
+
+/* Tags */
+.btn-outline-primary {
+    border-width: 1px;
+}
+
+.btn-outline-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* Newsletter Card */
+.bg-primary {
+    background: linear-gradient(135deg, #0d6efd, #0a58ca) !important;
+}
