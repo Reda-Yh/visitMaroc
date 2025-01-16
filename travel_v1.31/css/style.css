@@ -1,6 +1,7 @@
 /* ---------------  Variables  --------------- */
 :root {
     --primary-color: #0d6efd;
+    /* --primary-color: #C1272D; */
     --secondary-color: #6c757d;
     --light-color: #f8f9fa;
     --dark-color: #212529;
@@ -8,6 +9,7 @@
     --culture-color: #E91E63;
     --nature-color: #4CAF50;
     --beach-color: #FF9800;
+    --green-color: #006D44;
 }
 
 /* ---------------  Global Styles  --------------- */
@@ -16,7 +18,7 @@ body {
     padding-top: 76px;
 }
 
-/* ---------------  Navigation  --------------- */
+/* ---------------  Naviga59dd7d ou 50c871ion  --------------- */
 .navbar-brand i {
     font-size: 1.5rem;
     margin-right: 0.5rem;
@@ -35,7 +37,24 @@ button, a {
     cursor: url(https://cdn.custom-cursor.com/db/21279/32/color-indigo-dye-pointer.png), pointer !important;
 }
 
+/* ---------------  Custom Scrollbar  --------------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+    /* background: #8B0000; Rouge foncé pour hover */
+}
 
 /* ---------------  Footer  --------------- */
 footer {
@@ -58,24 +77,6 @@ footer {
 
 .btn:hover {
     transform: translateY(-2px);
-}
-
-/* ---------------  Custom Scrollbar  --------------- */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #0056b3;
 }
 
 /* ---------------  Responsive Adjustments  --------------- */
