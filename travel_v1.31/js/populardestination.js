@@ -19,10 +19,10 @@ function displayPopularDestinations(data) {
         const div = document.createElement('div');
         div.className = "col-md-6 col-lg-4";
         div.innerHTML = `
-            <div class="card destination-card h-100">
-                <img src="${destination.image}" class="card-img-top" alt="${destination.name}" loading="lazy">
+                    <div class="card destination-card h-100">
+                <img src="${destination.image}" class="card-img-top lazyload" alt="${destination.name}" loading="lazy">
                 <div class="card-body">
-                    <span class="badge bg-primary mb-2">${capitalize(destination.continent)}</span>
+                    <span class="badge bg-danger mb-2">${capitalize(destination.continent)}</span>
                     <h5 class="card-title">${destination.name}</h5>
                     <p class="card-text">${destination.description}</p>
                     <ul class="list-unstyled mb-3">
@@ -30,8 +30,8 @@ function displayPopularDestinations(data) {
                         <li><i class="bi bi-star-fill text-warning"></i> ${destination.rating}</li>
                     </ul>
                     <div class="d-flex justify-content-between align-items-center">
-                        <span class="price">From ${destination.priceValue}</span>
-                        <a href="#" class="btn btn-outline-primary">View Details</a>
+                        <span class="price text-green">From ${destination.priceValue}</span>
+                        <a href="#" class="btn btn-outline-danger">View Details</a>
                     </div>
                 </div>
             </div>

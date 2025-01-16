@@ -32,14 +32,7 @@
     <section class="container mb-5">
         <div class="row g-3">
             <div class="col-md-4">
-                <select class="form-select" id="continentFilter" aria-label="Filter by Continent">
-                    <option value="">All Continents</option>
-                    <option value="europe">Europe</option>
-                    <option value="asia">Asia</option>
-                    <option value="americas">Americas</option>
-                    <option value="africa">Africa</option>
-                    <option value="oceania">Oceania</option>
-                </select>
+                <input type="text" class="form-control" id="searchInput" placeholder="Search by destination name">
             </div>
             <div class="col-md-4">
                 <select class="form-select" id="priceFilter" aria-label="Filter by Price">
@@ -50,7 +43,7 @@
                 </select>
             </div>
             <div class="col-md-4">
-                <button class="btn btn-primary w-100" id="applyFilters">Apply Filters</button>
+                <button class="btn green-button w-100" id="applyFilters">Apply Filters</button>
             </div>
         </div>
     </section>

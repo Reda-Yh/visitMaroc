@@ -10,12 +10,39 @@
     --nature-color: #4CAF50;
     --beach-color: #FF9800;
     --green-color: #006D44;
+    --red-color:#B01A14;
 }
 
 /* ---------------  Global Styles  --------------- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 76px;
+}
+
+.red-button{
+    background-color: var(--red-color);
+    color: white;
+}
+.red-button:hover{
+    background-color: var(--red-color);
+    color: white;
+}
+
+.green-button{
+    background-color: var(--green-color);
+    color: white;
+}
+.green-button:hover{
+    background-color: var(--green-color);
+    color: white;
+}
+
+.text-red{
+    color: var(--red-color);
+}
+
+.text-green{
+    color: var(--green-color);
 }
 
 /* ---------------  Naviga59dd7d ou 50c871ion  --------------- */

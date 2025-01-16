@@ -19,7 +19,7 @@ function generateDestinations(data) {
             <div class="card destination-card h-100">
                 <img src="${destination.image}" class="card-img-top lazyload" alt="${destination.name}" loading="lazy">
                 <div class="card-body">
-                    <span class="badge bg-primary mb-2">${capitalize(destination.continent)}</span>
+                    <span class="badge bg-danger mb-2">${capitalize(destination.continent)}</span>
                     <h5 class="card-title">${destination.name}</h5>
                     <p class="card-text">${destination.description}</p>
                     <ul class="list-unstyled mb-3">
@@ -27,8 +27,8 @@ function generateDestinations(data) {
                         <li><i class="bi bi-star-fill text-warning"></i> ${destination.rating}</li>
                     </ul>
                     <div class="d-flex justify-content-between align-items-center">
-                        <span class="price">From ${destination.priceValue}</span>
-                        <a href="#" class="btn btn-outline-primary">View Details</a>
+                        <span class="price text-green">From ${destination.priceValue}</span>
+                        <a href="#" class="btn btn-outline-danger">View Details</a>
                     </div>
                 </div>
             </div>
@@ -43,14 +43,14 @@ function generateDestinations(data) {
 
 // Apply filters
 function applyFilters() {
-    const continentFilter = document.getElementById('continentFilter').value.toLowerCase();
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
     const priceFilter = document.getElementById('priceFilter').value.toLowerCase();
 
     let filteredDestinations = destinationsData;
 
-    if (continentFilter) {
+    if (searchInput) {
         filteredDestinations = filteredDestinations.filter(destination =>
-            destination.continent.toLowerCase() === continentFilter
+            destination.name.toLowerCase().includes(searchInput) // Search by name
         );
     }
 
@@ -69,6 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Event listeners
-document.getElementById('continentFilter').addEventListener('change', applyFilters);
+document.getElementById('searchInput').addEventListener('input', applyFilters);
 document.getElementById('priceFilter').addEventListener('change', applyFilters);
 document.getElementById('applyFilters').addEventListener('click', applyFilters);

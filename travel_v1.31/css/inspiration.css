@@ -17,7 +17,7 @@
     z-index: 1;
 }
 
-#btn-plan-trip {
+.btn-plan-trip {
     background-color: var(--green-color);
     color: #fff;
     font-weight: bold;

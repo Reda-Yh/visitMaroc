@@ -40,6 +40,12 @@
     width: 5%;
 }
 
+/* Card */
+.price {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
 /* ---------------  Special Offers  --------------- */
 .card-hover {
     width: auto;

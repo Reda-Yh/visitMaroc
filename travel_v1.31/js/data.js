@@ -192,7 +192,7 @@ export const destinationsData = [
         days: '2 Days',
         rating: '4.8/5 (110 reviews)',
         priceValue: '800 DHS',
-        popular: true,
+        popular: false,
       },
       {
         id: 16,
@@ -218,7 +218,7 @@ export const destinationsData = [
         days: '3 Days',
         rating: '4.7/5 (102 reviews)',
         priceValue: '900 DHS',
-        popular: true,
+        popular: false,
       },
       {
         id: 18,
