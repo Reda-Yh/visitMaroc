@@ -57,11 +57,11 @@ body {
 
 /* ---------------  Curseur  --------------- */
 * {
-    cursor: url(https://cdn.custom-cursor.com/db/21280/32/color-indigo-dye-cursor.png), default !important;
+    cursor: url(https://cdn.custom-cursor.com/db/14568/32/color-chilli-red-cursor.png) , default !important
 }
 
 button, a {
-    cursor: url(https://cdn.custom-cursor.com/db/21279/32/color-indigo-dye-pointer.png), pointer !important;
+    cursor: url(https://cdn.custom-cursor.com/db/14567/32/color-chilli-red-pointer.png)   , pointer !important
 }
 
 /* ---------------  Custom Scrollbar  --------------- */
@@ -74,13 +74,13 @@ button, a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: var(--red-color);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #0056b3;
-    /* background: #8B0000; Rouge foncé pour hover */
+    background: var(--red-color);
+    /* background: #0056b3; */
 }
 
 /* ---------------  Footer  --------------- */
