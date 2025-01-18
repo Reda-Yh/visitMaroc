@@ -58,6 +58,10 @@
 }
 
 /* Background Contact */
+#bg-contact{
+    background-image: url(https://i.ibb.co/CBq3DM5/IMG-0931.jpg);
+}
+
 
 @keyframes gradientAnimation {
     0% {
@@ -85,6 +89,8 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding: 30px;
     transition: all 0.3s ease-in-out;
+    
+
 }
 
 .contact-form-container:hover {
@@ -98,7 +104,11 @@
     justify-content: space-between;
     height: 100%;
 }
-
+.contact-form-container:hover, .contact-info:hover {
+    box-shadow: 0 0 15px rgba(0, 128, 0, 0.8); /* Ombre plus forte */
+    transform: scale(1.03); /* Agrandissement léger au survol */
+    background-color: #ebebeb; 
+}
 .flex-fill {
     flex: 1;
 }
@@ -160,7 +170,7 @@
 .contact-info-h5 {
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: var(--green-color);
 }
 
 .contact-info-p {
@@ -185,6 +195,8 @@
     color: #5c6bc0;
     font-size: 24px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    
+    
 }
 
 .contact-social-links .social-icon:hover {
