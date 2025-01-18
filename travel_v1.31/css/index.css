@@ -63,7 +63,7 @@
     }
 
     .card-hover__content {
-        background-color: #B8D6F1;
+        background-color: var(--green-color);
         bottom: 100%;
         transform: translateY(100%);
         height: 272px;
@@ -86,7 +86,7 @@
 .card-hover__content {
     width: 100%;
     text-align: center;
-    background-color: #4682B4;
+    background-color: var(--green-color);
     padding: 0 15% 14%;
     position: absolute;
     height:220px;
@@ -96,6 +96,7 @@
     transition: all 0.35s 0.35s cubic-bezier(.1, .77, .4, .97);
     will-change: bottom, background-color, transform, padding;
     z-index: 2;
+    color: white;
 }
 
 .card-hover__content::before,
@@ -124,9 +125,9 @@
     margin-bottom: 1em;
 }
 
-.card-hover__title span {
-    color: #1E3A8A;
-}
+/* .card-hover__title span {
+    color: var(--red-color);
+} */
 
 .card-hover__text {
     font-size: 0.75rem;
@@ -141,10 +142,17 @@
     flex-wrap: wrap;
     align-items: center;
     text-decoration: none;
-    color: #1E3A8A;
+    color: white;
+    background-color: var(--red-color);
     opacity: 0;
-    padding: px;
+    padding: 10px 20px;
+    border-radius: 25px;
     transition: all 0.35s;
+}
+
+.card-hover__link:hover {
+    background-color: #8b1410;
+    color: white;
 }
 
 .card-hover__link:hover svg {
@@ -167,17 +175,17 @@
     width: 100%;
     font-size: 1.5rem;
     text-align: center;
-    background-color: #4682B4;
+    background-color: var(--green-color);
     padding: 80px;
     bottom: 0;
     z-index: 0;
-    color: #B8D6F1;
+    color: white;
     transform: translateY(100%);
     transition: transform 0.35s;
 }
 
 .card-hover__extra span {
-    color: #1E3A8A;
+    color: var(--red-color);
 }
 
 .card-hover img {
@@ -197,20 +205,19 @@
     position: absolute;
     top: 15px;
     right: 15px;
-    background-color: #2a3d66;
+    background-color: var(--red-color);
     color: #fff;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 25px;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
     letter-spacing: 0.5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     text-transform: uppercase;
-    border: 1px solid #1c2b3d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 10;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 .offer-card {
