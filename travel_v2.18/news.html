@@ -15,7 +15,6 @@
 <body>
     <!-- Navigation -->
 
-
     <!-- Hero Section -->
     <header class="hero-section">
         <div class="container h-100">
@@ -23,11 +22,11 @@
                 <div class="col-12 text-center text-white">
                     <div class="hero-content">
                         <h1 class="display-4 fw-bold mb-4">Actualités et Événements au Maroc</h1>
-                        <p class="lead mb-4">Découvrez les dernières actualités touristiques et les événements à ne
-                            pasmanque</p>
+                        <p class="lead mb-4">Découvrez les dernières actualités touristiques et les événements à ne pas
+                            manquer</p>
                         <div class="search-bar">
                             <input type="text" class="form-control" placeholder="Où souhaitez-vous aller ?">
-                            <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                            <button class="btn search-btn"><i class="bi bi-search"></i></button>
                         </div>
                     </div>
                 </div>
@@ -35,10 +34,24 @@
         </div>
     </header>
 
+    <!-- Breaking News Banner -->
+    <div class="breaking-news">
+        <div class="alert alert-info mb-0" role="alert">
+            <div class="container">
+                <marquee>
+                    <i class="bi bi-info-circle-fill"></i> Dernière minute : Ouverture d'une nouvelle ligne aérienne
+                    directe entre Casablanca et New York |
+                    Le Maroc accueillera le Forum Mondial du Tourisme en 2024 |
+                    Nouveau record de visiteurs dans les sites historiques de Fès
+                </marquee>
+            </div>
+        </div>
+    </div>
+
     <!-- Featured Events -->
     <section class="featured-events py-5">
         <div class="container">
-            <h2 class="section-title">Événements de Football à Venir</h2>
+            <h2 class="section-title">Événements Majeurs à Venir</h2>
             <div class="row g-4">
                 <!-- Event 1 -->
                 <div class="col-md-6">
@@ -57,7 +70,6 @@
                 <div class="col-md-6">
                     <div class="event-card major">
                         <img src="https://i.ibb.co/DVQgb3D/CAN-2025-1.webp" alt="Coupe d'Afrique 2025">
-                        <!-- https://i.ibb.co/31pRXN5/one-year-to-go-3.webp -->
                         <div class="event-content">
                             <span class="badge bg-success">Afrique</span>
                             <h3>Coupe d'Afrique des Nations 2025</h3>
@@ -70,39 +82,37 @@
         </div>
     </section>
 
-    <!-- Categories Section -->
-    <section class="categories py-5 bg-light">
+    <!-- Tourism Development Section -->
+    <section id="tourisme" class="tourism-development py-5">
         <div class="container">
-            <h2 class="section-title">Types de Voyages</h2>
+            <h2 class="section-title">Développements Touristiques</h2>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="category-card culture">
-                        <div class="category-icon">
-                            <i class="bi bi-bank"></i>
+                <div class="col-md-6">
+                    <div class="development-card">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800"
+                            alt="Train à Grande Vitesse">
+                        <div class="card-body">
+                            <h3>Extension du Réseau TGV</h3>
+                            <p class="completion-date">Achèvement prévu: 2027</p>
+                            <p>Extension du réseau ferroviaire à grande vitesse vers Agadir et Oujda.</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 35%">35%</div>
+                            </div>
                         </div>
-                        <h3>Culture</h3>
-                        <p>Explorez l'histoire et le patrimoine</p>
-                        <span class="btn btn-outline-primary">Découvrir</span>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="category-card nature">
-                        <div class="category-icon">
-                            <i class="bi bi-tree"></i>
+                <div class="col-md-6">
+                    <div class="development-card">
+                        <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?auto=format&fit=crop&w=800"
+                            alt="Nouveau Terminal">
+                        <div class="card-body">
+                            <h3>Terminal 2 - Aéroport Mohammed V</h3>
+                            <p class="completion-date">Achèvement prévu: 2025</p>
+                            <p>Nouveau terminal pour augmenter la capacité à 23 millions de passagers.</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 65%">65%</div>
+                            </div>
                         </div>
-                        <h3>Nature</h3>
-                        <p>Aventures en plein air</p>
-                        <span class="btn btn-outline-primary">Découvrir</span>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="category-card beach">
-                        <div class="category-icon">
-                            <i class="bi bi-umbrella"></i>
-                        </div>
-                        <h3>Plages</h3>
-                        <p>Détente au bord de mer</p>
-                        <span class="btn btn-outline-primary">Découvrir</span>
                     </div>
                 </div>
             </div>
@@ -110,12 +120,12 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section class="newsletter py-5">
+    <section class="newsletter-section py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <h2>Inspirations Voyage</h2>
-                    <p class="lead">Recevez nos meilleures offres et conseils de voyage</p>
+                    <h2>Restez Informé</h2>
+                    <p class="lead">Abonnez-vous pour recevoir les dernières actualités touristiques du Maroc</p>
                     <form class="newsletter-form">
                         <div class="input-group mb-3">
                             <input type="email" class="form-control" placeholder="Votre email">
@@ -129,7 +139,6 @@
 
     <!-- Footer -->
     <script src="./js/footer.js"></script>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
