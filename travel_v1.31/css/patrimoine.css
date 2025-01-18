@@ -1,6 +1,6 @@
 /* ---------------  news.html  --------------- */
 
-/* Hero Section */
+/* ---------------  Hero Section  --------------- */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('https://i.ibb.co/dJR144t/i-Stock-1360012506.webp') no-repeat center center;
@@ -55,7 +55,7 @@
     background-color: var(--red-color);
 }
 
-/* Liste des destinations avec un espacement réduit pour rapprocher les listes de l'image */
+/* ---------------  Overview list  --------------- */
 .overview-list {
     font-size: 1.2rem;
     line-height: 2.2;
@@ -66,7 +66,6 @@
     margin: 0;
 }
 
-/* Réduire l'espace entre les éléments de liste */
 .overview-list li {
     margin-bottom: 10px;
 }
@@ -81,11 +80,10 @@
     color: var(--green-color);
 }
 
-/* Image ajustée pour avoir la même hauteur que la liste */
 .img-custom {
     width: 100%;
     height: auto;
-    max-height: 100%; /* Assurer une hauteur maximale égale à la liste */
+    max-height: 100%;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -96,10 +94,9 @@
     transform: scale(1.05);
 }
 
-/* Calcul dynamique de la hauteur de l'image pour correspondre à la hauteur de la liste */
 @media (min-width: 768px) {
     .img-custom {
-        max-height: calc(10 * 2.2rem); /* 10 items with line-height of 2.2rem */
+        max-height: calc(10 * 2.2rem);
     }
 }
 
@@ -172,11 +169,11 @@
 }
 
 .btn-read-more {
-    background-color: #d9534f; /* Couleur de fond rouge similaire */
-    border: 2px solid #d9534f; /* Bordure de la même couleur */
-    color: white; /* Texte blanc */
+    background-color: #d9534f;
+    border: 2px solid #d9534f;
+    color: white;
     padding: 10px 20px;
-    border-radius: 30px; /* Bordure arrondie */
+    border-radius: 30px;
     font-weight: bold;
     text-transform: uppercase;
     transition: background-color 0.3s ease, color 0.3s ease;

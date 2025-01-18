@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <i class="bi bi-globe-americas"></i> Wanderlust
+                <i class="bi bi-globe-americas"></i> VisitMaroc
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>

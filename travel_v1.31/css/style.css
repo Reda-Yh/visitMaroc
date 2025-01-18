@@ -1,17 +1,15 @@
 /* ---------------  Variables  --------------- */
 :root {
-    --primary-color: #0d6efd;
-    /* --primary-color: #C1272D; */
-    --secondary-color: #6c757d;
-    --light-color: #f8f9fa;
     --dark-color: #212529;
+    --light-color: #f8f9fa;
     --semi-dark-color: #343a40;
-    --culture-color: #E91E63;
     --nature-color: #4CAF50;
-    --beach-color: #FF9800;
     --green-color: #006D44;
+    --culture-color: #E91E63;
+    --red5-color: #C1272D;
     --red-color:#B01A14;
     --yellow-color: #f0e68c;
+    /* 59dd7d ou 50c871 */
 }
 
 /* ---------------  Global Styles  --------------- */
@@ -20,6 +18,7 @@ body {
     padding-top: 76px;
 }
 
+/* ---------------  Buttons Styles  --------------- */
 .red-button{
     background-color: var(--red-color);
     color: white;
@@ -38,6 +37,7 @@ body {
     color: white;
 }
 
+/* ---------------  Text Styles  --------------- */
 .text-red{
     color: var(--red-color);
 }
@@ -46,7 +46,11 @@ body {
     color: var(--green-color);
 }
 
-/* Section Titles */
+.text-yellow{
+    color: var(--yellow-color);
+}
+
+/* --------------- Section Titles  --------------- */
 .section-title {
     text-align: center;
     color: var(--green-color);
@@ -68,7 +72,36 @@ body {
     background-color: var(--red-color);
 }
 
-/* ---------------  Naviga59dd7d ou 50c871ion  --------------- */
+/* ---------------  Curseur  --------------- */
+* {
+    cursor: url(https://cdn.custom-cursor.com/db/14568/32/color-chilli-red-cursor.png) , default !important
+}
+
+button, a {
+    cursor: url(https://cdn.custom-cursor.com/db/14567/32/color-chilli-red-pointer.png)   , pointer !important
+}
+
+/* ---------------  Custom Scrollbar  --------------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    /* background: #f1f1f1; */
+    background: var(--green-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--red-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--red-color);
+    /* background: #0056b3; */
+}
+
+/* ---------------  Navigation  --------------- */
 @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
 
 .navbar {
@@ -109,45 +142,17 @@ body {
         color: var(--yellow-color);
     }
     .navbar {
-        background-color: #b01a14 ;
+        background-color: var(--red-color) ;
         transition: background-color 0.5s ease, opacity 0.5s ease;
         box-shadow: none;
         opacity: 0.9;
     }
 }
 
-/* ---------------  Curseur  --------------- */
-* {
-    cursor: url(https://cdn.custom-cursor.com/db/14568/32/color-chilli-red-cursor.png) , default !important
-}
-
-button, a {
-    cursor: url(https://cdn.custom-cursor.com/db/14567/32/color-chilli-red-pointer.png)   , pointer !important
-}
-
-/* ---------------  Custom Scrollbar  --------------- */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--red-color);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--red-color);
-    /* background: #0056b3; */
-}
-
 /* ---------------  Footer  --------------- */
 footer {
-    background: linear-gradient(45deg, #b01a14, #006D44); /* Rouge marocain avec un ton sombre */
-    color: #f0e68c; /* Jaune marocain pour le texte */
+    background: linear-gradient(45deg, var(--red-color), var(--green-color));
+    color: var(--yellow-color);
     padding: 2rem 0;
     text-align: center;
 }
@@ -155,12 +160,12 @@ footer {
 footer h5 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #f0e68c; /* Jaune marocain pour les titres */
+    color: var(--yellow-color);
 }
 
 footer p, footer ul, footer a {
     font-size: 1rem;
-    color: #f0e68c; /* Jaune marocain pour le texte et les liens */
+    color: var(--yellow-color);
 }
 
 footer a {
@@ -169,34 +174,34 @@ footer a {
 }
 
 footer a:hover {
-    color: white !important; /* Les liens deviennent blancs au survol */
+    color: white !important;
 }
 
 .social-icons a {
     font-size: 1.5rem;
-    color: #f0e68c; /* Jaune marocain pour les icônes sociales */
+    color: var(--yellow-color);
     transition: color 0.3s ease;
     margin-right: 0.5rem;
 }
 
 .social-icons a:hover {
-    color: white !important; /* Les icônes sociales deviennent blanches au survol */
+    color: white !important;
 }
 
 .footer .input-group .form-control {
-    border: 2px solid #f0e68c; /* Bordure jaune marocain */
+    border: 2px solid var(--yellow-color);
     color: #1a1a1a;
     background-color: white;
 }
 
 .footer .input-group .btn {
-    background-color: #b01a14; /* Bouton rouge marocain */
+    background-color: var(--yellow-color);
     color: white;
     border: none;
 }
 
 .footer .input-group .btn:hover {
-    background-color: #8b1511; /* Rouge foncé au survol */
+    background-color: #8b1511;
 }
 
 
