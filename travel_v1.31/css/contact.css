@@ -58,13 +58,6 @@
 }
 
 /* Background Contact */
-#bg-contact{
-    background: linear-gradient(135deg, #8ab6d6, #4a90e2);
-    background-size: 100% 100%;
-    animation: gradientAnimation 3s ease infinite;
-    padding: 0px 0;
-    border-radius: 10px;
-}
 
 @keyframes gradientAnimation {
     0% {
