@@ -8,6 +8,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Cartes de valeurs et sections équipe */
 .about-card {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -17,18 +18,26 @@
 
 .about-card:hover {
     transform: scale(1.05);
-    color: rgb(0, 110, 255);
-}
-
-.about-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 2rem;
+    /* color: rgb(0, 110, 255); */
+    background-color: var(--green-color);
+    color: #ffebcc;
 }
 
 .about-card .card-body p {
     font-size: 1rem;
     color: #6c757d;
+}
+
+
+.about-card i {
+    color: #c41e3a;
+}
+
+
+.about-h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 2rem;
 }
 
 .img-team {
@@ -49,11 +58,13 @@
     border-radius: 50%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.6s ease, box-shadow 0.6s ease;
+    border: 3px solid #ffd700; /* Bordure dorée */
 }
 
 .team-member img:hover {
     transform: scale(1.2) rotate(-5deg); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border-color: #c41e3a; /* Bordure rouge sur hover */
 }
 
 
@@ -73,6 +84,7 @@
     font-weight: bold;
     margin-top: 10px;
     transition: color 0.3s ease;
+    color: #c41e3a; /* Rouge */
 }
 
 .team-member p {
@@ -82,7 +94,7 @@
 }
 
 .team-member:hover h3 {
-    color: #007bff; 
+    color: var(--green-color); 
 }
 
 .team-member img{
