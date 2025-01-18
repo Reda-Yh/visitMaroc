@@ -160,19 +160,42 @@
     border-radius: 8px;
 }
 
-.text-content p {
+.text-content {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #333;
     text-align: justify;
 }
 
+.text-content p {
+    margin-bottom: 20px;
+}
+
+.btn-read-more {
+    background-color: #d9534f; /* Couleur de fond rouge similaire */
+    border: 2px solid #d9534f; /* Bordure de la même couleur */
+    color: white; /* Texte blanc */
+    padding: 10px 20px;
+    border-radius: 30px; /* Bordure arrondie */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-read-more:hover {
+    background-color: white;
+    color: #d9534f; /* Change le texte en rouge au hover */
+    border: 2px solid #d9534f; /* Garder la bordure rouge */
+}
+
+
 @media (max-width: 575.98px) {
     .destination-section h2 {
         font-size: 1.0rem;
     }
 
-    .text-content p {
+    .text-content {
         font-size: 1rem;
     }
 }
+
