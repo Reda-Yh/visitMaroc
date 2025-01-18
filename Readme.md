@@ -51,5 +51,5 @@ This project was developed by:
 - Adding a database for managing blog posts and destinations dynamically.
 - Implementing user authentication for personalized experiences.
 
-## License 
+## License
 This project is open-source and available under the MIT License.
