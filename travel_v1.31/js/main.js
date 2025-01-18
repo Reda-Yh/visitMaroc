@@ -25,14 +25,15 @@ window.addEventListener('scroll', function() {
     const navLinks = document.querySelectorAll('.nav-link');
 
     if (window.scrollY > 50) {
-        navbar.style.backgroundColor = 'var(--semi-dark-color)';
-        navbar.style.opacity = 0.7;
+        // navbar.style.backgroundColor = 'var(--semi-dark-color)';
+        navbar.style.backgroundColor = '#b01a14';
+        navbar.style.opacity = 0.8;
 
         navbar.classList.remove('bg-transparent');
         // navbar.classList.add('bg-dark');
 
         navLinks.forEach(link => {
-            link.style.color = 'white'; // Couleur très blanche
+            link.style.color = 'var(--yellow-color)'; // Couleur très blanche
         });
     } else {
         navbar.style.backgroundColor = 'transparent';
@@ -42,7 +43,7 @@ window.addEventListener('scroll', function() {
         // navbar.classList.remove('bg-dark');
 
         navLinks.forEach(link => {
-            link.style.color = ''; // Revenir à la couleur par défaut
+            link.style.color = 'white'; // Revenir à la couleur par défaut
         });
     }
 });

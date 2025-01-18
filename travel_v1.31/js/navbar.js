@@ -18,13 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         <a class="nav-link fw-semibold" href="./destinations.html">Destinations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="./news.html">News</a>
+                        <a class="nav-link fw-semibold" href="./actualités.html">Actualités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="./inspiration.html">Inspiration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="./blog.html">Blog</a>
+                        <a class="nav-link fw-semibold" href="./patrimoine.html">Patrimoine</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="./about.html">About</a>
