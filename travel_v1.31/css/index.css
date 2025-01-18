@@ -1,6 +1,9 @@
 /* ---------------  index.html  --------------- */
 
 /* Hero Carousel */
+body{
+    background-image:url(https://i.ibb.co/CBq3DM5/IMG-0931.jpg);
+}
 #heroCarousel {
     margin-top: -76px;
 }
@@ -63,8 +66,9 @@
     }
 
     .card-hover__content {
-        background-color: var(--green-color);
+        background-color: var(--rgb(58, 170, 69)-color);
         bottom: 100%;
+        background-color: rgb(58, 170, 69);
         transform: translateY(100%);
         height: 272px;
         padding-top: 70px;
