@@ -169,8 +169,8 @@
 }
 
 .btn-read-more {
-    background-color: #d9534f;
-    border: 2px solid #d9534f;
+    background-color: var(--red-color);
+    border: 2px solid var(--red-color);
     color: white;
     padding: 10px 20px;
     border-radius: 30px;
@@ -180,9 +180,9 @@
 }
 
 .btn-read-more:hover {
-    background-color: white;
-    color: #d9534f; /* Change le texte en rouge au hover */
-    border: 2px solid #d9534f; /* Garder la bordure rouge */
+    background-color: var(--green-color);
+    color: white; /* Change le texte en rouge au hover */
+    border: 2px solid var(--green-color); /* Garder la bordure rouge */
 }
 
 

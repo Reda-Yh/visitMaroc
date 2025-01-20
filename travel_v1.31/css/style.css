@@ -101,6 +101,44 @@ button, a {
     /* background: #0056b3; */
 }
 
+/* Style du bouton flottant rond */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--red-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Style de l'icône */
+.scroll-to-top i {
+    font-size: 24px;
+    color: var(--yellow-color);
+}
+
+/* Ajustement de la taille pour les téléphones */
+@media (max-width: 768px) {
+    .scroll-to-top {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .scroll-to-top i {
+        font-size: 18px;
+    }
+}
+
+
 /* ---------------  Navigation  --------------- */
 @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
 
@@ -134,6 +172,7 @@ button, a {
 .navbar-toggler {
     border: none;
 }
+
 
 @media (max-width: 768px) {
     .navbar .nav-link {
