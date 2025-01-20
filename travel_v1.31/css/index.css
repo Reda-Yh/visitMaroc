@@ -263,8 +263,17 @@ body{
 }
 
 .special-offer-banner span {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
     text-align: center;
 }
+.navbar-brand img {
+    width: 250px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    transition: transform 0.3s ease;
+}
+
+
