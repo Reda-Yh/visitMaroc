@@ -59,6 +59,8 @@ body {
     margin-bottom: 3rem;
     position: relative;
     padding-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
 .section-title::after {
