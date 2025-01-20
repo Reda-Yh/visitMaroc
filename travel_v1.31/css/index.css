@@ -268,12 +268,4 @@ body{
     letter-spacing: 1px;
     text-align: center;
 }
-.navbar-brand img {
-    width: 250px; 
-    height: auto; 
-    display: block; 
-    margin: 0 auto; 
-    transition: transform 0.3s ease;
-}
-
 

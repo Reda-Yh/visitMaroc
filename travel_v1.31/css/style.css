@@ -173,6 +173,14 @@ button, a {
     border: none;
 }
 
+.navbar-brand img {
+    width: 250px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    transition: transform 0.3s ease;
+}
+
 
 @media (max-width: 768px) {
     .navbar .nav-link {
