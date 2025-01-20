@@ -108,3 +108,36 @@
 .team-member h6{
     color: black;
 }
+
+.team-member a {
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 6px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.team-member a:hover {
+    background-color: var(--green-color);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
+
+.team-member a h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #c41e3a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.team-member a:hover h6 {
+    color: #ffebcc;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+}
