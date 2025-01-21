@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navbar = `
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
                 <i><img src="https://i.ibb.co/Cnx729n/Capture-d-cran-2025-01-20-225118-removebg-preview-removebg-preview.png"/></i>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
