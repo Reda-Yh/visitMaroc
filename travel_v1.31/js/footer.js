@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="col-md-4 mb-3">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        Aimrane 
                         <li><a href="./about.html" class="text-white text-decoration-none"><i class="bi bi-chevron-right"></i> About Us</a></li>
                         <li><a href="./destinations.html" class="text-white text-decoration-none"><i class="bi bi-chevron-right"></i> Destinations</a></li>
                         <li><a href="./actualités.html" class="text-white text-decoration-none"><i class="bi bi-chevron-right"></i> Actualités</a></li>
